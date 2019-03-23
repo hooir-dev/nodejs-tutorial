@@ -1,0 +1,25 @@
+{
+  "name": "vuejs-tutorial",
+  "version": "1.0.0",
+  "repository": "https://github.com/thisliuyang/vuejs-tutorial.git",
+  "author": "lipengzhou <lpzmail@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "start": "npm run docs:dev",
+    "push": "git add -A && git commit -m ':memo:' && git push"
+  },
+  "devDependencies": {
+    "vuepress": "^0.14.10",
+    "webpack-dev-middleware": "3.6.0"
+  },
+  "dependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.0",
+    "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.0",
+    "moment": "^2.24.0"
+  },
+  "resolutions": {
+    "webpack-dev-middleware": "3.6.0"
+  }
+}

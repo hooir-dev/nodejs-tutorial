@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="mvvm-app">
+    <input type="text" v-model="word">
+    <p>{{word}}</p>
+    <button v-on:click="sayHi">change model</button>
+  </div>
+  <script src="./js/observer.js"></script>
+  <script src="./js/watcher.js"></script>
+  <script src="./js/compile.js"></script>
+  <script src="js/mvvm.js"></script>
+</body>
+
+</html>
