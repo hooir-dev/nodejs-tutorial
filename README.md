@@ -1,7 +1,17 @@
-# Vue.js 入门教程
+# nodejs 入门教程
 
-[Vue.js](https://github.com/vuejs/vue)是当下很火的一个JavaScript MVVM库，它是以数据驱动和组件化的思想构建的。相比于Angular.js，Vue.js提供了更加简洁、更易于理解的API，使得我们能够快速地上手并使用Vue.js。
+Node.js允许通过[JavaScript](https://zh.wikipedia.org/wiki/JavaScript)和一系列模块来编写[服务器](https://zh.wikipedia.org/wiki/%E6%9C%8D%E5%8A%A1%E5%99%A8)端应用和网络相关的应用。[[18\]](https://zh.wikipedia.org/wiki/Node.js#cite_note-b2-18)[[19\]](https://zh.wikipedia.org/wiki/Node.js#cite_note-b4-19)[[20\]](https://zh.wikipedia.org/wiki/Node.js#cite_note-b5-20)核心模块包括[文件系统](https://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F)I/O、网络（[HTTP](https://zh.wikipedia.org/wiki/HTTP)、[TCP](https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE)、[UDP](https://zh.wikipedia.org/wiki/%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%8D%8F%E8%AE%AE)、[DNS](https://zh.wikipedia.org/wiki/DNS)、[TLS/SSL](https://zh.wikipedia.org/wiki/%E5%82%B3%E8%BC%B8%E5%B1%A4%E5%AE%89%E5%85%A8%E5%8D%94%E8%AD%B0)等）、[二进制](https://zh.wikipedia.org/wiki/%E4%BA%8C%E8%BF%9B%E5%88%B6)数据流、[加密](https://zh.wikipedia.org/wiki/%E5%8A%A0%E5%AF%86)算法、[数据流](https://zh.wikipedia.org/w/index.php?title=%E6%95%B0%E6%8D%AE%E6%B5%81&action=edit&redlink=1)等等。[[19\]](https://zh.wikipedia.org/wiki/Node.js#cite_note-b4-19)[[21\]](https://zh.wikipedia.org/wiki/Node.js#cite_note-21)Node模块的API形式简单，降低了编程的复杂度。[[19\]](https://zh.wikipedia.org/wiki/Node.js#cite_note-b4-19)
 
-如果你之前已经习惯了用jQuery操作DOM，学习Vue.js时请先抛开手动操作DOM的思维，因为Vue.js是数据驱动的，你无需手动操作DOM。它通过一些特殊的HTML语法，将DOM和数据绑定起来。一旦你创建了绑定，DOM将和数据保持同步，每当变更了数据，DOM也会相应地更新。
+使用框架可以加速开发。常用的框架有[Express.js](https://zh.wikipedia.org/w/index.php?title=Express.js&action=edit&redlink=1)、[Socket.IO](https://zh.wikipedia.org/wiki/Socket.IO)和Connect等。[[22\]](https://zh.wikipedia.org/wiki/Node.js#cite_note-b7-22)Node.js的程序可以在[Microsoft Windows](https://zh.wikipedia.org/wiki/Microsoft_Windows)、[Linux](https://zh.wikipedia.org/wiki/Linux)、[Unix](https://zh.wikipedia.org/wiki/Unix)、[Mac OS X](https://zh.wikipedia.org/wiki/Mac_OS_X)等服务器上运行。Node.js也可以使用[CoffeeScript](https://zh.wikipedia.org/wiki/CoffeeScript)（一种旨在简化JavaScript的替代语言，其代码可按照一定规则转化为合法的JavaScript代码）、[TypeScript](https://zh.wikipedia.org/wiki/TypeScript)（微软开发的强化了数据类型的JavaScript变体）、[Dart](https://zh.wikipedia.org/wiki/Dart)语言，以及其他能够编译成JavaScript的语言编程。[[23\]](https://zh.wikipedia.org/wiki/Node.js#cite_note-b6-23)[[23\]](https://zh.wikipedia.org/wiki/Node.js#cite_note-b6-23)
 
-当然了，在使用Vue.js时，你也可以结合其他库一起使用，比如jQuery。
+Node.js主要用于编写像Web服务器一样的网络应用，这和[PHP](https://zh.wikipedia.org/wiki/PHP)和[Python](https://zh.wikipedia.org/wiki/Python)是类似的。[[18\]](https://zh.wikipedia.org/wiki/Node.js#cite_note-b2-18)但是Node.js与其他语言最大的不同之处在于，PHP等语言是阻塞的（只有前一条命令执行完毕才会执行后面的命令），而Node.js是非阻塞的（多条命令可以同时被运行，通过[回调函数](https://zh.wikipedia.org/wiki/%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0)得知命令已结束运行）。[[18\]](https://zh.wikipedia.org/wiki/Node.js#cite_note-b2-18)
+
+Node.js是[事件驱动](https://zh.wikipedia.org/wiki/%E4%BA%8B%E4%BB%B6%E9%A9%85%E5%8B%95)的。开发者可以在不使用[线程](https://zh.wikipedia.org/wiki/%E7%BA%BF%E7%A8%8B)的情况下开发出一个能够承载高并发的服务器。其他服务器端语言难以开发高并发应用，而且即使开发出来，性能也不尽人意。Node.js正是在这个前提下被创造出来。Node.js把JavaScript的易学易用和Unix网络编程的强大结合到了一起。
+
+Node.js使用[Google](https://zh.wikipedia.org/wiki/Google) [V8 JavaScript引擎](https://zh.wikipedia.org/wiki/V8_(JavaScript%E5%BC%95%E6%93%8E))，因为：
+
+- V8是基于[BSD许可证](https://zh.wikipedia.org/wiki/BSD%E8%AE%B8%E5%8F%AF%E8%AF%81)的开源软件
+- V8速度非常快
+- V8专注于网络功能，在HTTP、DNS、TCP等方面更加成熟
+
+Node.js已经有数十万模块，它们可以通过一个名为[npm](https://zh.wikipedia.org/wiki/Npm)的管理器免费下载。Node.js开发社区主要有两个邮件列表、一个在[freenode](https://zh.wikipedia.org/wiki/Freenode)的名为#node.js的[IRC](https://zh.wikipedia.org/wiki/IRC)频道。社区集中在[NodeConf](http://nodeconf.com/)。[[24\]](https://zh.wikipedia.org/wiki/Node.js#cite_note-24)
