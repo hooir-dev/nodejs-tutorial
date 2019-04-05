@@ -45,8 +45,8 @@ module.exports = {
     nav: [
       { text: '刘洋博客', link: 'https://thisliuyang.cn' },
       { text: '学习文档', items: [
-        {text: 'js',link: 'http://thisliuyang.cn'},
-        {text: 'css',link: 'https://baidu.com'}
+        {text: 'javascript',link: 'https://javascript.itliuyang.cn/'},
+        {text: 'vuejs',link: 'https://vuejs.itliuyang.cn/'}
       ] }
     ],
     repo: 'thisliuyang/nodejs-tutorial',
